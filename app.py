@@ -7,7 +7,7 @@ BANCO_DE_DADOS = "alunos.db"
 class BancoDeDados:
     
     def __init__(self, nome_db = BANCO_DE_DADOS):
-        self.nome = nome_db
+        self.nome_db = nome_db
     def ligar_banco(self):
         conexao = sq.connect(self.nome_db)
         cursor = conexao.cursor()
